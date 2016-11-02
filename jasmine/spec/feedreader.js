@@ -107,7 +107,7 @@ $(function() {
 
         it('loadFeed loads atleast a single entry element in feed container', function(){
             var totalEntries = $('.feed .entry').length;
-            console.log('totalEntries ' + totalEntries);
+            //console.log('totalEntries ' + totalEntries);
             expect(totalEntries).toBeGreaterThan(0);
          });
 
@@ -119,10 +119,10 @@ $(function() {
         var initialFeed;
 
         beforeEach(function(done){
-            loadFeed(0);
-            initialFeed = $('.feed .entry').eq(0).html(); 
-            console.log('initialFeed : ' + initialFeed);
-           
+            loadFeed(0, function(){
+                 initialFeed = $('.feed').html(); 
+                 //console.log('initialFeed : ' + initialFeed);
+            });           
             loadFeed(1,done);
         });
         
@@ -134,8 +134,8 @@ $(function() {
 
         it("should change content when a new feed is loaded", function(){
              
-            var newFeed = $('.feed .entry').eq(0).html();
-            console.log('new Feed : ' + newFeed);
+            var newFeed = $('.feed').html();
+            //console.log('new Feed : ' + newFeed);
             expect(initialFeed).not.toBe(newFeed);
             
          });
