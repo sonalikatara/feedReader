@@ -9,3 +9,8 @@ In this project I was given a web-based application that reads RSS feeds. The or
 ## WHY ?
 Writing effective tests requires analyzing multiple aspects of an application including the HTML, CSS and JavaScript - an extremely important skill when changing teams or joining a new company.
 Good tests give you the ability to quickly analyze whether new code breaks an existing feature within your codebase, without having to manually test all of the functionality.
+
+## Installation
+
+$ git clone 
+
