@@ -1,4 +1,4 @@
-# feedreader
+# feedreader - TDD using Jasmine
 
 ![](img/ScreenShot.png)
 
