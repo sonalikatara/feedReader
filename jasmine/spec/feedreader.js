@@ -135,7 +135,7 @@ $(function() {
          * Remember, loadFeed() is asynchronous.
          */
 
-         it("should change content when a new feed is loaded", function(){
+         it("should change content when a new feed is loaded", function(done){
             var newFeed = $('.feed').innerHTML;
             //console.log('new Feed : ' + newFeed);
             expect(initialFeed).not.toBe(newFeed);
