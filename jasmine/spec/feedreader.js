@@ -122,8 +122,9 @@ $(function() {
             loadFeed(0, function(){
                  initialFeed = $('.feed').html(); 
                  //console.log('initialFeed : ' + initialFeed);
+                 loadFeed(1,done);
             });           
-            loadFeed(1,done);
+            
         });
         
 
