@@ -12,5 +12,12 @@ Good tests give you the ability to quickly analyze whether new code breaks an ex
 
 ## Installation
 
-$ git clone 
+1. Clone the repo
+$ git clone https://github.com/sonalikatara/feedReader.git
+$ cd feedReader
+
+2. Open up index.html in your browser of choice.
+
+3. The test suites are in feedReader/jasmine/spec/feedreader.js
+
 
